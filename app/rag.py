@@ -3,11 +3,12 @@ from langchain_ollama import OllamaEmbeddings, OllamaLLM
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 from langchain_community.document_loaders import PyPDFLoader
+OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
 
 CHROMA_DIR = "data/chroma_db"
 
-embeddings = OllamaEmbeddings(model="nomic-embed-text")
-llm = OllamaLLM(model="llama3", temperature=0.2)
+embeddings = OllamaEmbeddings(model="nomic-embed-text", base_url=OLLAMA_BASE_URL)
+llm = OllamaLLM(model="llama3", temperature=0.2, base_url=OLLAMA_BASE_URL)
 
 splitter = RecursiveCharacterTextSplitter(chunk_size=900, chunk_overlap=150)
 

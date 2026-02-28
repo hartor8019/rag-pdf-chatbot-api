@@ -3,6 +3,10 @@ __pycache__/
 *.pyc
 .pytest_cache/
 .env
+
+# Runtime data (no subir)
 data/uploads/
 data/chroma_db/
+
+# Eval output (se regenera)
 eval/report.json
