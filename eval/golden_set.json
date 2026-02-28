@@ -1,0 +1,17 @@
+[
+  {
+    "id": "q1_summary",
+    "question": "¿De qué trata este documento? Resúmelo en 5 puntos.",
+    "must_include": ["plan", "empleo remoto", "AI", "CV", "LinkedIn"]
+  },
+  {
+    "id": "q2_cv",
+    "question": "¿Qué recomienda para optimizar LinkedIn?",
+    "must_include": ["LinkedIn", "publicar", "proyectos"]
+  },
+  {
+    "id": "q3_roadmap",
+    "question": "Resume el roadmap de 90 días.",
+    "must_include": ["90", "proyectos", "entrevistas"]
+  }
+]

@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+pydantic
+python-multipart
+langchain
+langchain-community
+langchain-text-splitters
+chromadb
+pypdf
+requests
